@@ -1,0 +1,21 @@
+:root {
+  --gray: #f4f7fe;
+}
+
+.container-custom {
+  position: relative;
+  width: 530px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 30px auto;
+}
+
+.bg-gray { background: var(--gray); }
+.wrapper { display: none; }
+.wrapper.active { display: block; }
+
+@media only screen and (max-width: 768px) {
+  .container-custom { width: 90%; }
+}
